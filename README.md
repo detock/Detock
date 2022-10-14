@@ -2,9 +2,7 @@
 
 Detock is a distributed data store designed to be deployed in multiple geographic regions.
 
-Like SLOG, Detock employs a deterministic execution framework to move most of intra- and inter-region coordination out of transactional execution. As a result, it can achieve high throughput, even for high contention workloads.
-
-While SLOG can guarantee low latency for transactions accessing data in a single region, it has to route all multi-region transactions through a global ordering mechanism to avoid deadlocks, incurring additional latency from this global ordering layer on top of normal processing of the transactions. Unlike SLOG, Detock eliminates the global ordering layer completely by using a graph-based concurrency control protocol that deterministically resolves deadlocks without aborting transactions, hence, achieving much lower latency.
+Detock employs a deterministic execution framework to move most of intra- and inter-region coordination out of transactional execution. As a result, it can achieve high throughput, even for high contention workloads. Detock eliminates the global ordering layer completely by using a graph-based concurrency control protocol that deterministically resolves deadlocks without aborting transactions, hence, achieving much lower latency.
 
 This repository contains an experimental implementations of the system. 
 
