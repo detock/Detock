@@ -1,0 +1,174 @@
+﻿Diagnose log at 2022-10-14T04:29:58Z
+
+Executable: C:\Program Files\Git\mingw64\bin\git-credential-manager-core.exe
+Version: 2.0.785+6074e4e3d3
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Windows
+OSVersion: 10.0 (build 19044)
+Reading environment variables... OK
+ Variables:
+PROCESSOR_ARCHITEW6432=AMD64
+DriverData=C:\Windows\System32\Drivers\DriverData
+COMPUTERNAME=HOMELAB
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+OneDrive=C:\Users\Cuong\OneDrive
+WT_PROFILE_ID={2c4de342-38b7-51cf-b940-2309a097f518}
+HOMEPATH=\Users\Cuong
+TMP=C:\Users\Cuong\AppData\Local\Temp
+PROCESSOR_REVISION=0101
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+SBT_HOME=C:\Program Files (x86)\sbt\
+USERDOMAIN_ROAMINGPROFILE=HOMELAB
+TEMP=C:\Users\Cuong\AppData\Local\Temp
+LOCALAPPDATA=C:\Users\Cuong\AppData\Local
+VBOX_HWVIRTEX_IGNORE_SVM_IN_USE=1
+GOPATH=C:\Users\Cuong\go
+JAVA_HOME=C:\Program Files\AdoptOpenJDK\jdk-11.0.8.10-hotspot\
+USERDOMAIN=HOMELAB
+ProgramFiles(x86)=C:\Program Files (x86)
+Path=C:\Program Files\AdoptOpenJDK\jdk-11.0.8.10-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\sbt\bin;;C:\Go\bin;C:\Program Files\dotnet\;C:\Program Files\Google\Google Apps Sync\;C:\Program Files\Google\Google Apps Migration\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\Cuong\AppData\Local\Microsoft\WindowsApps;C:\Users\Cuong\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Cuong\go\bin;C:\Users\Cuong\AppData\Local\Programs\MiKTeX\miktex\bin\x64\
+PROCESSOR_LEVEL=23
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 1 Stepping 1, AuthenticAMD
+PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files\Intel\Wired Networking\
+PUBLIC=C:\Users\Public
+NUMBER_OF_PROCESSORS=24
+CommonProgramFiles=C:\Program Files (x86)\Common Files
+WT_SESSION=c4c664d1-a4d5-4f8f-b22d-da55b970113b
+WSLENV=WT_SESSION::WT_PROFILE_ID
+asl.log=Destination=file
+ProgramData=C:\ProgramData
+ProgramW6432=C:\Program Files
+ProgramFiles=C:\Program Files (x86)
+SystemRoot=C:\WINDOWS
+CommonProgramW6432=C:\Program Files\Common Files
+LOGONSERVER=\\HOMELAB
+USERPROFILE=C:\Users\Cuong
+DISPLAY=localhost:0.0
+APPDATA=C:\Users\Cuong\AppData\Roaming
+HOMEDRIVE=C:
+USERNAME=Cuong
+PROCESSOR_ARCHITECTURE=x86
+OS=Windows_NT
+ComSpec=C:\WINDOWS\system32\cmd.exe
+SystemDrive=C:
+windir=C:\WINDOWS
+OneDriveConsumer=C:\Users\Cuong\OneDrive
+ALLUSERSPROFILE=C:\ProgramData
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is 'C:\Users\Cuong\AppData\Local\Temp\'...
+Checking basic file I/O...
+Writing to temporary file 'C:\Users\Cuong\AppData\Local\Temp\ecd5417e8bfe7cf28f7007b1'... OK
+Reading from temporary file 'C:\Users\Cuong\AppData\Local\Temp\ecd5417e8bfe7cf28f7007b1'... OK
+Deleting temporary file 'C:\Users\Cuong\AppData\Local\Temp\ecd5417e8bfe7cf28f7007b1'... OK
+Testing IFileSystem instance...
+UserHomePath: C:\Users\Cuong
+UserDataDirectoryPath: C:\Users\Cuong\.gcm
+GetCurrentDirectory(): \\wsl$\Ubuntu\home\ctring\data\sigmod\Detock
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking basic networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com... OK
+Sending HEAD request to https://example.com... OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:54386/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+Testing with IHttpClientFactory created HTTP client...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com... OK
+Sending HEAD request to https://example.com... OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:54388/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.38.0.windows.1'
+Locating current repository... OK
+Not inside a Git repository.
+Listing all Git configuration... OK
+Git configuration:
+file:C:/Program Files/Git/etc/gitconfig	diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig	http.sslbackend=openssl
+file:C:/Program Files/Git/etc/gitconfig	http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+file:C:/Program Files/Git/etc/gitconfig	core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig	core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig	core.symlinks=false
+file:C:/Program Files/Git/etc/gitconfig	pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig	credential.helper=manager-core
+file:C:/Program Files/Git/etc/gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig	init.defaultbranch=master
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker not supported.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: C:\Users\Cuong\AppData\Local\.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: C:\Users\Cuong\AppData\Local\.IdentityService\msal.cache
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+
